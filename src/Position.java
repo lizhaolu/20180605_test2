@@ -10,7 +10,17 @@ public class Position {
         int a=0;
         System.out.print("任意数字：");
         int b=scanner.nextInt();
-        ArrayList l=new ArrayList();
+        int count=1;
+        while(b/10>0){
+            count++;
+            b/=10;
+        }
+        System.out.println(count);
+    }
+  /**
+   * 方法一
+   * */
+        /*      ArrayList l=new ArrayList();
         getPosition(b,l);
         System.out.println(l.size());
     }
@@ -21,6 +31,6 @@ public class Position {
         list.add(num % 10);
         getPosition(num / 10, list);
         return list;
+    }*/
 
-    }
 }
